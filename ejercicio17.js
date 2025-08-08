@@ -1,6 +1,11 @@
-const jedi = { nombre: 'Luke Skywalker', edad: 19 }
+// For...in: Usa un for...in para imprimir por consola los datos del alienígena.
 
-// Tu código para cambiar la edad aquí...
-jedi.edad = 25
-
-console.log(jedi)
+const alien = {
+  name: 'Xenomorph',
+  species: 'Xenomorph XX121',
+  origin: 'Unknown',
+  weight: 180
+}
+for (const key in alien) {
+  console.log(`La propiedad ${key} tiene cómo valor: ${alien[key]}`)
+}

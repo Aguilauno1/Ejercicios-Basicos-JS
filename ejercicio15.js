@@ -1,6 +1,12 @@
-const jedi = { nombre: 'Luke Skywalker', edad: 19 }
-
-// Tu código para cambiar la edad aquí...
-jedi.edad = 25
-
-console.log(jedi)
+// Includes: Haz un bucle y muestra por consola todos aquellos valores del array que incluyan la palabra "Camiseta".
+const products = [
+  'Camiseta de Metallica',
+  'Pantalón vaquero',
+  'Gorra de beisbol',
+  'Camiseta de Basket',
+  'Cinturón de Orión',
+  'AC/DC Camiseta'
+]
+for (const p of products) {
+  if (p.includes('Camiseta')) console.log(p)
+}

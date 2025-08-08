@@ -1,6 +1,12 @@
-const jedi = { nombre: 'Luke Skywalker', edad: 19 }
-
-// Tu código para cambiar la edad aquí...
-jedi.edad = 25
-
-console.log(jedi)
+// For...of: Usa un bucle forof para recorrer todos los destinos del array.
+const placesToTravel16 = [
+  'Japon',
+  'Venecia',
+  'Murcia',
+  'Santander',
+  'Filipinas',
+  'Madagascar'
+]
+for (const place of placesToTravel16) {
+  console.log(place)
+}

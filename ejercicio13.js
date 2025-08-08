@@ -1,6 +1,21 @@
-const jedi = { nombre: 'Luke Skywalker', edad: 19 }
+// Buscador de nombres: Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe dentro de dicho array. Esta función comprueba si existe el elemento, y en caso de que exista nos devuelve un true y la posición de dicho elemento y por la contra un false.
+function nameFinder(nameList, value) {
+  const index = nameList.indexOf(value)
+  const found = index !== -1
+  return { found, index }
+}
 
-// Tu código para cambiar la edad aquí...
-jedi.edad = 25
-
-console.log(jedi)
+const names = [
+  'Peter',
+  'Steve',
+  'Tony',
+  'Natasha',
+  'Clint',
+  'Logan',
+  'Xabier',
+  'Bruce',
+  'Peggy',
+  'Jessica',
+  'Marc'
+]
+console.log(nameFinder(names, 'Natasha'))
